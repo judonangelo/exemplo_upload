@@ -4,8 +4,8 @@ const app = express();
 
 const upload = multer({dest:'img/'})
 
-app.use('/img'.express.static('img'));
+app.use('/img',express.static('img'));
 
 app.use(express.static('public'));
 
-app.listen(3000, () => cconsole.log("rodando em http://localhost:3000"));
+app.listen(3000, () => console.log("rodando em http://localhost:3000"));
